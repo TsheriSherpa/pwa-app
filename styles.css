@@ -1,0 +1,167 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+p {
+    margin: 0;
+}
+
+.main {
+    padding-bottom: 20px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #b6aeae;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: darkcyan;
+}
+
+header > h1 {
+    text-align: center;
+}
+
+.input-section{
+    display:  flex;
+    flex-direction: column;
+}
+
+.input-div {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.add-button {
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 166px;
+    background-color: rgb(47, 21, 214);
+    color: white;
+}
+
+p{
+    margin-bottom:0;
+}
+
+input{
+    width: 100%;
+}
+
+.input-header >p{
+    padding: 10px;
+    font-weight: bold;
+    background-color: #7d7777;
+}
+
+.view-section > p{
+    padding: 10px;
+    font-weight: bold;
+    background-color: #7d7777;
+}
+
+.songs-list {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+li {
+    width: 85%;
+    padding:5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+span {
+    color: darkgrey;
+}
+
+.list-item-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-item-title-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item-button-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.list-song-title {
+    font-weight: bold;
+    color: black;
+}
+
+.list-item-no-of-likes {
+    font-weight: bold;
+    color: black;
+}
+
+.btn-danger{
+    color: white;
+    border-radius: 15%;
+    background-color: red;
+}
+
+.btn-like {
+    color: white;
+    border-radius: 15%;
+    background-color: rgb(67, 67, 234);
+}
+
+/* On screens that are 800px or more, set the different css */
+@media screen and (min-width: 800px) {
+    .main {
+        width: 800px;
+        height: 80vh;
+        padding-bottom: 0;
+    }
+
+    header {
+        background-color: dimgray;
+    }
+
+    main {
+        display: flex;
+        background-color: darkorange;
+    }
+
+    section {
+        width: 100%;
+        height: 70vh;
+        border: 2px solid black;
+    }
+
+    .input-header {
+        background-color: #7d7777;
+        text-align: center;
+    }
+    
+    .view-section > p{
+        background-color: #7d7777;
+        text-align: center;
+        top: 0;
+        position: sticky;
+    }
+
+    .view-section {
+        overflow-y: scroll;
+    }
+
+    .view-section::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
+}

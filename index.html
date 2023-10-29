@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is pwa music app demo">
+    <meta name="theme-color" content="#317EFB"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="./images/favicon-512.png">
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="./index.js"></script>
+    
+    <title>Music App</title>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <img src="./images/logo.webp" alt="logo" height=75 width=65></img>
+            <h1>My Music App</h1>
+        </header>
+        <main>
+            <section class="input-section">
+                <div class="input-header">
+                    <p>NEW SONG</p>   
+                </div>
+                <form class="input-div" id="form">
+                    <div>
+                        <label for="titleInput">Title:</label>  
+                        <input type="text" name="title" id="titleInput" required/>
+                    </div>
+                    <div>
+                        <label for="artistInput">Artist:</label>  
+                        <input type="text" name="artist" id="artistInput" required/>
+                    </div>  
+                    <button class="add-button" type="submit" id="add-button">Add</button>
+                </form>
+            </section>
+
+            <section class="view-section">
+                <p>LIST OF SONGS</p>   
+                <ul class="songs-list" id="songs-list">
+                    
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+
